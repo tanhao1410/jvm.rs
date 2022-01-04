@@ -1,0 +1,27 @@
+use std::fmt::{Debug, Formatter};
+use std::fmt::Error;
+use crate::instructions::{Instruction, BytecodeReader};
+use std::ops::Deref;
+use crate::rtda::frame::Frame;
+use crate::rtda::slot::Slot;
+use crate::rtda::heap::constant_pool::constant::Constant;
+use crate::rtda::heap::class::Class;
+
+// include!("anewarray.rs");
+// include!("arraylength.rs");
+// include!("athrow.rs");
+include!("checkcast.rs");
+include!("getfield.rs");
+include!("getstatic.rs");
+include!("instanceof.rs");
+// include!("invokedynamic.rs");
+// include!("invokeinterface.rs");
+include!("invokespecial.rs");
+// include!("invokestatic.rs");
+include!("invokevirtual.rs");
+// include!("monitorenter.rs");
+// include!("monitorexit.rs");
+include!("new.rs");
+//include!("newarray.rs");
+include!("putfield.rs");
+include!("putstatic.rs");

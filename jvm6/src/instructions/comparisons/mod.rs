@@ -1,0 +1,26 @@
+use super::*;
+use crate::rtda::*;
+use std::fmt::{Formatter, Error, Debug};
+use std::ops::Deref;
+use crate::rtda::frame::Frame;
+use crate::rtda::slot::Slot;
+
+include!("dcmpg.rs");
+include!("dcmpl.rs");
+include!("fcmpg.rs");
+include!("fcmpl.rs");
+include!("if_acmpeq.rs");
+include!("if_acmpne.rs");
+include!("if_icmpeq.rs");
+include!("if_icmpge.rs");
+include!("if_icmpgt.rs");
+include!("if_icmple.rs");
+include!("if_icmplt.rs");
+include!("if_icmpne.rs");
+include!("ifeq.rs");
+include!("ifge.rs");
+include!("ifgt.rs");
+include!("ifle.rs");
+include!("iflt.rs");
+include!("ifne.rs");
+include!("lcmp.rs");
