@@ -1,0 +1,1 @@
+pub const EXCEPTION_DETAIL_MESSGAE_NAME :& str = "detailMessage";
