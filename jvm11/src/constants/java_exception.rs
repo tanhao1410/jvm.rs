@@ -1,0 +1,1 @@
+pub const NULL_POINTER_EXCEPTION:&str = "java.lang.NullPointerException";

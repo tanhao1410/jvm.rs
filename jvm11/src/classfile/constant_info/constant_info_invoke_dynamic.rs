@@ -1,0 +1,16 @@
+use crate::classfile::class_reader::ClassReader;
+
+#[allow(dead_code)]
+pub struct ConstantInvokeDynamicInfo{
+    bootstrap_method_attr_index: u16,
+    name_and_type_index: u16,
+}
+
+impl ConstantInvokeDynamicInfo{
+    pub(crate) fn new(reader: &mut ClassReader) -> ConstantInvokeDynamicInfo {
+        let bootstrap_method_attr_index = reader.read_u16();
+        let name_and_type_index = reader.read_u16();
+        Self { bootstrap_method_attr_index, name_and_type_index }
+    }
+}
+

@@ -1,0 +1,1 @@
+pub const STRING_TYPE_DESCRIPTOR:&str = "Ljava/lang/String;";
